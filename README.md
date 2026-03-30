@@ -8,11 +8,22 @@ Pull live financial data into Google Sheets. Prices, technicals, earnings, senti
 
 ## Setup
 
-1. Open Google Sheets
-2. Extensions → Apps Script
-3. Paste the code from `sheets.js`
-4. Set your API key: `VEROQ_API_KEY` in Script Properties
-5. Use `=VEROQ_ASK("NVDA price")` in any cell
+1. Open any Google Sheet
+2. Go to **Extensions > Apps Script**
+3. Delete the default code and paste the contents of `sheets.js`
+4. Go to **Project Settings > Script Properties**
+5. Add property: `VEROQ_API_KEY` = your key from [veroq.ai/pricing](https://veroq.ai/pricing)
+6. Save and return to your sheet
+
+## Example
+
+| | A | B |
+|--|---|---|
+| 1 | **Ticker** | **Price** |
+| 2 | AAPL | `=VEROQ_PRICE("AAPL")` -> 248.80 |
+| 3 | NVDA | `=VEROQ_PRICE("NVDA")` -> 167.46 |
+| 4 | Signal | `=VEROQ_SIGNAL("AAPL")` -> LEAN_BUY (63/100) |
+| 5 | Verify | `=VEROQ_VERIFY("AAPL beat earnings")` -> SUPPORTED (85%) |
 
 ## Functions
 
