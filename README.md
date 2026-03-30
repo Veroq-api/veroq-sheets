@@ -1,5 +1,9 @@
 # VEROQ Sheets
 
+[![License](https://img.shields.io/badge/license-MIT-2EE89A)](LICENSE)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-2EE89A)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![VEROQ](https://img.shields.io/badge/powered%20by-VEROQ-2EE89A)](https://veroq.ai)
+
 Pull live financial data into Google Sheets. Prices, technicals, earnings, sentiment — all with one function.
 
 ## Setup
